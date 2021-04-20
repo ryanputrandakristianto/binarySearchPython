@@ -1,0 +1,13 @@
+#ADA 4 INPUTAN SENDING DATA KE FUNCTIONNYA YANG HARUS DIISI
+def AlgoritmaBinarySearch(dataset, left, right, cari):
+    while left <= right:
+        mid = left + (right - left) // 2;
+        if dataset[mid] == cari:
+            return mid
+        elif dataset[mid] < cari:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+#HASIL DARI FUNCTION INI ADALAH -1 APABILA NILAI YANG DICARI TIDAK DITEMUKAN
+    return -1
